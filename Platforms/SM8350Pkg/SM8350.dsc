@@ -16,7 +16,7 @@
 ################################################################################
 [Defines]
   PLATFORM_NAME                  = SM8350
-  PLATFORM_GUID                  = b6325ac2-9f3f-4b1d-b129-ac7b35ddde60
+  PLATFORM_GUID                  = 9b938f77-7926-4025-98b2-6f83c4dc74e0
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010005
   OUTPUT_DIRECTORY               = Build/SM8350Pkg
@@ -39,18 +39,22 @@
   gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x17A60000
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00008350
-  gEmbeddedTokenSpaceGuid.PcdInterruptBaseAddress|0x09BC0000
+  gEmbeddedTokenSpaceGuid.PcdInterruptBaseAddress|0x17A60000
 
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|3
 
+  gQcomTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 888 @ 2.84 GHz"
+  gQcomTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"SM8350"
+
 [LibraryClasses.common]
   PowerServicesLib|SM8350Pkg/Library/PowerServicesLib/PowerServicesLib.inf
-  PlatformPeiLib|SM8350Pkg/PlatformPei/PlatformPeiLib.inf
+  PlatformPeiLib|SM8350Pkg/Library/PlatformPei/PlatformPeiLib.inf
   PlatformPrePiLib|SM8350Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
   RFSProtectionLib|SM8350Pkg/Library/RFSProtectionLib/RFSProtectionLib.inf
   AcpiPlatformUpdateLib|SM8350Pkg/Library/AcpiPlatformUpdateLib/AcpiPlatformUpdateLib.inf
   MsPlatformDevicesLib|SM8350Pkg/Library/MsPlatformDevicesLib/MsPlatformDevicesLib.inf
+  ConsoleMsgLib|SM8350Pkg/Library/ConsoleMsgLib/ConsoleMsgLib.inf
 
 [Components.common]
   SM8350Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf

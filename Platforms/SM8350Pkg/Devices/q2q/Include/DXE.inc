@@ -12,13 +12,11 @@
   }
 
   FILE DRIVER = 2D7A83E3-E343-4FFB-9109-631F2EE11694 {
-    SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/TzDxe/ScmDxeLA.depex
     SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/TzDxe/ScmDxeLA.efi
     SECTION UI = "ScmDxeLA"
   }
 
   FILE DRIVER = 6925FAD3-E243-4B69-AD61-3F978C8ABC60 {
-    SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/TzDxe/TzDxeLA.depex
     SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/TzDxe/TzDxeLA.efi
     SECTION UI = "TzDxeLA"
   }
@@ -51,11 +49,11 @@
     SECTION UI = "FontDxe"
   }
 
-  #FILE DRIVER = 040E1E61-0AFB-411B-9EC9-00F3FC59CC13 {
-  #  SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.depex
-  #  SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.efi
-  #  SECTION UI = "QcomWDogDxe"
-  #}
+  FILE DRIVER = 040E1E61-0AFB-411B-9EC9-00F3FC59CC13 {
+    SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.depex
+    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.patched.efi
+    SECTION UI = "QcomWDogDxe"
+  }
 
   INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
@@ -241,14 +239,14 @@
     SECTION UI = "DALTLMM"
   }
 
-  #FILE DRIVER = 1C04F529-0612-4319-9315-B2E75C16810A {
-  #  SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.efi
-  #  SECTION UI = "FeatureEnablerDxe"
-  #}
+  FILE DRIVER = 1C04F529-0612-4319-9315-B2E75C16810A {
+    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.patched.efi
+    SECTION UI = "FeatureEnablerDxe"
+  }
 
   FILE DRIVER = 2A0ECDCE-01AE-446E-9FFD-C4217DE0340F {
     SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/MinidumpTADxe/MinidumpTADxe.depex
-    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/MinidumpTADxe/MinidumpTADxe.efi
+    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/MinidumpTADxe/MinidumpTADxe.patched.efi
     SECTION UI = "MinidumpTADxe"
   }
 
@@ -259,12 +257,12 @@
     SECTION UI = "DisplayDxe"
   }
 !else
-	INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
+  INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
 !endif
 
   FILE DRIVER = 5bd181db-0487-4f1a-ae73-820e165611b3 {
     SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.depex
-    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.efi
+    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.patched.efi
     SECTION UI = "ButtonsDxe"
   }
 
@@ -344,7 +342,7 @@
 
   FILE DRIVER = cd823a4d-7dec-4531-ae5d-4134fa4127b8 {
     SECTION DXE_DEPEX = Binaries/q2q/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.depex
-    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.efi
+    SECTION PE32 = Binaries/q2q/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.patched.efi
     SECTION UI = "UsbConfigDxe"
   }
 

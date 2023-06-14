@@ -10,10 +10,6 @@
 #
 ##
 
-[Defines]
-  # Platform Defines
-  USE_DISPLAYDXE              = 1
-
 [LibraryClasses.common]
   PlatformMemoryMapLib|SM6125Pkg/Devices/ginkgo/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
 
@@ -47,11 +43,11 @@
   gSimpleInitTokenSpaceGuid.PcdGuiDefaultDPI|320
 
   # Device Info
-  gSM6125TokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
-  gSM6125TokenSpaceGuid.PcdSmbiosSystemModel|"Redmi Note 8/8T"
-  gSM6125TokenSpaceGuid.PcdSmbiosSystemRetailModel|"ginkgo"
-  gSM6125TokenSpaceGuid.PcdSmbiosSystemRetailSku|"Redmi_Note_8/8T_ginkgo"
-  gSM6125TokenSpaceGuid.PcdSmbiosBoardModel|"Redmi Note 8/8T"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemModel|"Redmi Note 8/8T"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemRetailModel|"ginkgo"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Redmi_Note_8/8T_ginkgo"
+  gQcomTokenSpaceGuid.PcdSmbiosBoardModel|"Redmi Note 8/8T"
 
 [PcdsDynamicDefault.common]
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1080

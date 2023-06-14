@@ -6,39 +6,122 @@
 |❌|**Not Working**|
 |❔|**Unknown**|
 
-## Xiaomi 11T Pro
+## Galaxy Tab S8 5G
 
-<img align="right" src="http://i01.appmifile.com/webfile/globalimg/JenniferK/Product/K3S-black!800x800!85.png" width="500" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Galaxy-Tab-S8-5G.png" width="500" alt="Preview">
 
-**SOC: SM8350** <br />
-**Codename: vili** <br />
+**SOC: SM8450** <br />
+**Codename: gts8** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
+**Contibuters: None** <br />
 **Tester: [Robotix22](https://github.com/Robotix22/)**
 
 ### UEFI Status
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Display||✅|
 |Touchscreen|Not Possible right now|❌|
 |Clocks||✅|
 |UFS||✅|
-|Buttons||✅|
-|USB|USB FN only|⚠️|
-|SD Card|No SD Card slot|❌|
+|Buttons|Pwr Button only in SimpleInit|⚠️|
+|USB|No USB Host & Power|⚠️|
+|SD Card||❌|
 |ACPI|Still in Work|⚠️|
-|Slot Switch||✅|
+|Slot Switch|Not an A/B Device|❌|
 
 ### OS Status
 
 <table>
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
-  
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||✅|
+|UFS|Dosen't work cuz of Samsung's Partition Table|⚠️|
+|Buttons||❌|
+|Sensors||❌|
+|Battery||❌|
+|USB||❌|
+|Charging||❌|
+|WLAN||❌|
+|CPU|Only One Core working right now|⚠️|
+|Touchscreen||❌|
+|Bluetooth||❌|
+|GPS||❌|
+|Audio||❌|
+|GPU||❌|
+|Camera||❌|
+|NFC||❌|
+|Fingerprint||❌|
+|Mobile Data||❌|
+|Display||✅|
+|Vibration||❌|
+|S Pen||❌|
+
+</td><td>
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot|No Storage Support yet to boot a Distro|⚠️|
+|UFS|Dosen't work cuz of Samsung's Partition Table|⚠️|
+|Buttons||❌|
+|Sensors||❌|
+|Battery||❌|
+|USB||❌|
+|Charging||❌|
+|WLAN||❌|
+|CPU||❌|
+|Touchscreen||❌|
+|Bluetooth||❌|
+|GPS||❌|
+|Audio||❌|
+|GPU||❌|
+|Camera||❌|
+|NFC||❌|
+|Fingerprint||❌|
+|Mobile Data||❌|
+|Display||✅|
+|Vibration||❌|
+|S Pen||❌|
+
+</td></tr> </table>
+
+## Galaxy Z Fold 3 5G
+
+<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Galaxy-Z-Fold3-5G.png" width="500" alt="Preview">
+
+**SOC: SM8350** <br />
+**Codename: q2q** <br />
+**Maintainer: [Azkali](https://github.com/Azkali/)** <br />
+**Contibuters: None** <br />
+**Tester: [Azkali](https://github.com/Azkali/)**
+
+### UEFI Status
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Display||✅|
+|Touchscreen|Not Possible right now|❌|
+|Clocks||✅|
 |UFS||✅|
+|Buttons|Pwr Button only in SimpleInit|⚠️|
+|USB|No USB Host & Power|⚠️|
+|SD Card|No SD Card slot|❌|
+|ACPI|Still in Work|⚠️|
+|Slot Switch||❌|
+
+### OS Status
+
+<table>
+<tr><th>Windows</th><th>Linux</th></tr>
+<tr><td>
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot||✅|
+|UFS||❌|
 |Buttons|No Drivers yet|❔|
 |Sensors||❌|
 |Battery||❌|
@@ -47,7 +130,7 @@
 |WLAN||❌|
 |CPU|Only One Core working right now|⚠️|
 |Touchscreen||❌|
-|Bluetooh||❌|
+|Bluetooth||❌|
 |GPS||❌|
 |Audio||❌|
 |GPU||❌|
@@ -60,9 +143,89 @@
 
 </td><td>
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
-|Boot|Needs mainline DTB to boot correctly|⚠️|
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot||❔|
+|UFS||❔|
+|Buttons||❔|
+|Sensors||❔|
+|Battery||❔|
+|USB||❔|
+|Charging||❔|
+|WLAN||❔|
+|CPU||❔|
+|Touchscreen||❔|
+|Bluetooth||❔|
+|GPS||❔|
+|Audio||❔|
+|GPU||❔|
+|Camera||❔|
+|NFC||❔|
+|Fingerprint||❔|
+|Mobile Data||❔|
+|Display||❔|
+|Vibration||❔|
+
+</td></tr> </table>
+
+## Xiaomi 11T Pro
+
+<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Xiaomi-11T-Pro.png" width="500" alt="Preview">
+
+**SOC: SM8350** <br />
+**Codename: vili** <br />
+**Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
+**Contibuters: None** <br />
+**Tester: [Ashwinlapmobtech](https://github.com/Ashwinlapmobtech)**
+
+### UEFI Status
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Display||✅|
+|Touchscreen|Not Possible right now|❌|
+|Clocks||✅|
+|UFS||✅|
+|Buttons||✅|
+|USB|No USB Host & Power|⚠️|
+|SD Card|No SD Card slot|❌|
+|ACPI|Still in Work|⚠️|
+|Slot Switch||✅|
+
+### OS Status
+
+<table>
+<tr><th>Windows</th><th>Linux</th></tr>
+<tr><td>
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot||✅|
+|UFS||✅|
+|Buttons|No Drivers yet|❔|
+|Sensors||❌|
+|Battery||❌|
+|USB||❌|
+|Charging||❌|
+|WLAN||❌|
+|CPU|Only One Core working right now|⚠️|
+|Touchscreen||❌|
+|Bluetooth||❌|
+|GPS||❌|
+|Audio||❌|
+|GPU||❌|
+|Camera||❌|
+|NFC||❌|
+|Fingerprint||❌|
+|Mobile Data||❌|
+|Display||✅|
+|Vibration||❌|
+
+</td><td>
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot|Needs proper mainline to function correctly|⚠️|
 |UFS||❌|
 |Buttons||❌|
 |Sensors||❌|
@@ -72,7 +235,7 @@
 |WLAN||❌|
 |CPU||❌|
 |Touchscreen||❌|
-|Bluetooh||❌|
+|Bluetooth||❌|
 |GPS||❌|
 |Audio||❌|
 |GPU||❌|
@@ -85,27 +248,28 @@
 
 </td></tr> </table>
 
-# Z Fold 3 5G
+## Mi A3
 
-<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Galaxy-Z-Fold3-5G.png" width="500" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Mi-A3.png" width="500" alt="Preview">
 
-**SOC: SM8350** <br />
-**Codename: q2q** <br />
-**Maintainer: [Azkali](https://github.com/Azkali/)** <br />
-**Tester: [Azkali](https://github.com/Azkali/)**
+**SOC: SM6125** <br />
+**Codename: laurel_sprout** <br />
+**Maintainer: [Kernel357](https://github.com/Kernel357)** <br />
+**Contibuters: None** <br />
+**Tester: [Kernel357](https://github.com/Kernel357)**
 
 ### UEFI Status
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Display||✅|
 |Touchscreen|Not Possible right now|❌|
 |Clocks||✅|
-|UFS||❔|
+|UFS|Needs a Patch|❌|
 |Buttons||✅|
-|USB|USB FN only|⚠️|
-|SD Card|No SD Card slot|❌|
-|ACPI|Still in Work|⚠️|
+|USB|Needs a Patch|❌|
+|SD Card|Needs working SdccDxe|❌|
+|ACPI||❌|
 |Slot Switch||❌|
 
 ### OS Status
@@ -113,9 +277,9 @@
 <table>
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
-  
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||❔|
 |UFS||❔|
 |Buttons||❔|
@@ -125,7 +289,7 @@
 |Charging||❔|
 |CPU||❔|
 |Touchscreen||❔|
-|Bluetooh||❔|
+|Bluetooth||❔|
 |GPS||❔|
 |Audio||❔|
 |GPU||❔|
@@ -138,8 +302,8 @@
 
 </td><td>
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||❔|
 |UFS||❔|
 |Buttons||❔|
@@ -149,7 +313,7 @@
 |Charging||❔|
 |CPU||❔|
 |Touchscreen||❔|
-|Bluetooh||❔|
+|Bluetooth||❔|
 |GPS||❔|
 |Audio||❔|
 |GPU||❔|
@@ -164,24 +328,25 @@
 
 ## Redmi Note 8/8T
 
-<img align="right" src="https://www.kibotek.com/wp-content/uploads/2021/06/kiboTEK_xiaomi_redminote_8_2021_007.png" width="500" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Redmi-Note-8.png" width="500" alt="Preview">
 
 **SOC: SM6125** <br />
 **Codename: ginkgo** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
+**Contibuters: None** <br />
 **Testers: [SwedMlite](https://github.com/SwedMlite), [VAVANESKA](https://github.com/VAVANESKA), [Vicente Cortes](https://github.com/vicenteicc2008), [kubawis128](https://github.com/kubawis128)**
 
 ### UEFI Status
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Display||✅|
 |Touchscreen|Not Possible right now|❌|
-|Clocks|Needs a Patch|❌|
-|eMMC|Needs working Clocks|❌|
+|Clocks||✅|
+|eMMC|Needs patched SdccDxe|❌|
 |Buttons||✅|
-|USB|Needs a Patch|❌|
-|SD Card|Needs working Clocks|❌|
+|USB|Only Charging|⚠️|
+|SD Card|Needs patched SdccDxe|❌|
 |ACPI||❌|
 |Slot Switch|Not an A/B Device|❌|
 
@@ -190,9 +355,9 @@
 <table>
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
-  
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||❔|
 |UFS||❔|
 |Buttons||❔|
@@ -202,7 +367,7 @@
 |Charging||❔|
 |CPU||❔|
 |Touchscreen||❔|
-|Bluetooh||❔|
+|Bluetooth||❔|
 |GPS||❔|
 |Audio||❔|
 |GPU||❔|
@@ -215,8 +380,8 @@
 
 </td><td>
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||❔|
 |UFS||❔|
 |Buttons||❔|
@@ -226,84 +391,7 @@
 |Charging||❔|
 |CPU||❔|
 |Touchscreen||❔|
-|Bluetooh||❔|
-|GPS||❔|
-|Audio||❔|
-|GPU||❔|
-|Camera||❔|
-|NFC||❔|
-|Fingerprint||❔|
-|Mobile Data||❔|
-|Display Output||❔|
-|Vibration||❔|
-
-</td></tr> </table>
-
-## Mi A3
-
-<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Xiaomi-Mi-A3.png" width="500" alt="Preview">
-
-**SOC: SM6125** <br />
-**Codename: laurel_sprout** <br />
-**Maintainer: [Kernel357](https://github.com/Kernel357)** <br />
-**Tester: [Kernel357](https://github.com/Kernel357)**
-
-### UEFI Status
-
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
-|Display||✅|
-|Touchscreen|Not Possible right now|❌|
-|Clocks|Needs a Patch|❌|
-|UFS|Needs working Clocks|❌|
-|Buttons||✅|
-|USB|Needs a Patch|❌|
-|SD Card|Needs working Clocks|❌|
-|ACPI||❌|
-|Slot Switch||❌|
-
-### OS Status
-
-<table>
-<tr><th>Windows</th><th>Linux</th></tr>
-<tr><td>
-  
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
-|Boot||❔|
-|UFS||❔|
-|Buttons||❔|
-|Sensors||❔|
-|Battery||❔|
-|USB||❔|
-|Charging||❔|
-|CPU||❔|
-|Touchscreen||❔|
-|Bluetooh||❔|
-|GPS||❔|
-|Audio||❔|
-|GPU||❔|
-|Camera||❔|
-|NFC||❔|
-|Fingerprint||❔|
-|Mobile Data||❔|
-|Display Output||❔|
-|Vibration||❔|
-
-</td><td>
-
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
-|Boot||❔|
-|UFS||❔|
-|Buttons||❔|
-|Sensors||❔|
-|Battery||❔|
-|USB||❔|
-|Charging||❔|
-|CPU||❔|
-|Touchscreen||❔|
-|Bluetooh||❔|
+|Bluetooth||❔|
 |GPS||❔|
 |Audio||❔|
 |GPU||❔|
@@ -318,24 +406,25 @@
 
 ## Redmi 9T
 
-<img align="right" src="http://i01.appmifile.com/webfile/globalimg/J19S/J19s-Black-0108!800x800!85.png" width="500" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/MU-Qcom/blob/main/Pictures/Redmi-9T.png" width="500" alt="Preview">
 
 **SOC: SM6115** <br />
 **Codename: lime** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
+**Contibuters: None** <br />
 **Tester: [Xhelowrk](https://github.com/Xhelowrk)**
 
 ### UEFI Status
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Display||✅|
 |Touchscreen|Not Possible right now|❌|
-|Clocks|Needs a Patch|❌|
-|UFS|Needs working Clocks|❌|
+|Clocks||✅|
+|UFS|Needs a Patch|❌|
 |Buttons||✅|
-|USB|Needs a Patch|❌|
-|SD Card|Needs working Clocks|❌|
+|USB|Only Charging|⚠️|
+|SD Card||❔|
 |ACPI||❌|
 |Slot Switch|Not an A/B Device|❌|
 
@@ -344,9 +433,9 @@
 <table>
 <tr><th>Windows</th><th>Linux</th></tr>
 <tr><td>
-  
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||❔|
 |UFS||❔|
 |Buttons||❔|
@@ -356,7 +445,7 @@
 |Charging||❔|
 |CPU||❔|
 |Touchscreen||❔|
-|Bluetooh||❔|
+|Bluetooth||❔|
 |GPS||❔|
 |Audio||❔|
 |GPU||❔|
@@ -369,8 +458,8 @@
 
 </td><td>
 
-|Feature|Description|Working state|
-|:------|:----------|:-----------:|
+|Feature|Description|State|
+|:------|:----------|:---:|
 |Boot||❔|
 |UFS||❔|
 |Buttons||❔|
@@ -380,7 +469,7 @@
 |Charging||❔|
 |CPU||❔|
 |Touchscreen||❔|
-|Bluetooh||❔|
+|Bluetooth||❔|
 |GPS||❔|
 |Audio||❔|
 |GPU||❔|

@@ -10,10 +10,6 @@
 #
 ##
 
-[Defines]
-  # Platform Defines
-  USE_DISPLAYDXE              = 1
-
 [LibraryClasses.common]
   PlatformMemoryMapLib|SM6115Pkg/Devices/lime/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.inf
 
@@ -43,11 +39,11 @@
   gSimpleInitTokenSpaceGuid.PcdGuiDefaultDPI|320
 
   # Device Info
-  gSM6115TokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
-  gSM6115TokenSpaceGuid.PcdSmbiosSystemModel|"Redmi 9T"
-  gSM6115TokenSpaceGuid.PcdSmbiosSystemRetailModel|"lime"
-  gSM6115TokenSpaceGuid.PcdSmbiosSystemRetailSku|"Redmi_9T_lime"
-  gSM6115TokenSpaceGuid.PcdSmbiosBoardModel|"Redmi 9T"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemModel|"Redmi 9T"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemRetailModel|"lime"
+  gQcomTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Redmi_9T_lime"
+  gQcomTokenSpaceGuid.PcdSmbiosBoardModel|"Redmi 9T"
 
 [PcdsDynamicDefault.common]
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1080

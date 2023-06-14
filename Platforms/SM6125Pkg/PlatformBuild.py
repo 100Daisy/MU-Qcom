@@ -13,6 +13,8 @@ import time
 import xml.etree.ElementTree
 import tempfile
 import uuid
+import string
+import datetime
 
 from edk2toolext.environment import shell_environment
 from edk2toolext.environment.uefi_build import UefiBuilder
@@ -21,7 +23,6 @@ from edk2toolext.invocables.edk2_setup import SetupSettingsManager, RequiredSubm
 from edk2toolext.invocables.edk2_update import UpdateSettingsManager
 from edk2toolext.invocables.edk2_pr_eval import PrEvalSettingsManager
 from edk2toollib.utility_functions import RunCmd
-
 
     # ####################################################################################### #
     #                                Common Configuration                                     #
@@ -32,7 +33,7 @@ class CommonPlatform():
     '''
     PackagesSupported = ("SM6125Pkg",)
     ArchSupported = ("AARCH64",)
-    TargetsSupported = ("DEBUG", "RELEASE", "NOOPT")
+    TargetsSupported = ("DEBUG", "RELEASE")
     Scopes = ('SM6125', 'gcc_aarch64_linux', 'edk2-build', 'cibuild')
     WorkspaceRoot = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     PackagesPath = (
@@ -43,8 +44,9 @@ class CommonPlatform():
         "Common/MU_OEM_SAMPLE",
         "Silicon/Arm/MU_TIANO",
         "Features/DFCI",
-        "GPLDrivers/Library/SimpleInit"
+        "GPLDrivers/Library/SimpleInit",
     )
+
 
     # ####################################################################################### #
     #                         Configuration for Update & Setup                                #
@@ -66,24 +68,25 @@ class SettingsManager(UpdateSettingsManager, SetupSettingsManager, PrEvalSetting
 
     def GetRequiredSubmodules(self):
         """Return iterable containing RequiredSubmodule objects.
-
+        
         !!! note
             If no RequiredSubmodules return an empty iterable
         """
         return [
-            RequiredSubmodule("Platforms/Binaries", True),
             RequiredSubmodule("MU_BASECORE", True),
             RequiredSubmodule("Common/MU", True),
             RequiredSubmodule("Common/MU_TIANO", True),
             RequiredSubmodule("Common/MU_OEM_SAMPLE", True),
-            RequiredSubmodule("Features/DFCI", True),
             RequiredSubmodule("Silicon/Arm/MU_TIANO", True),
+            RequiredSubmodule("Features/DFCI", True),
+            RequiredSubmodule("Platforms/Binaries", True),
             RequiredSubmodule("GPLDrivers/Library/SimpleInit", True),
         ]
 
     def SetArchitectures(self, list_of_requested_architectures):
         ''' Confirm the requests architecture list is valid and configure SettingsManager
         to run only the requested architectures.
+
         Raise Exception if a list_of_requested_architectures is not supported
         '''
         unsupported = set(list_of_requested_architectures) - \
@@ -126,6 +129,7 @@ class SettingsManager(UpdateSettingsManager, SetupSettingsManager, PrEvalSetting
     def GetPlatformDscAndConfig(self) -> tuple:
         ''' If a platform desires to provide its DSC then Policy 4 will evaluate if
         any of the changes will be built in the dsc.
+
         The tuple should be (<workspace relative path to dsc file>, <input dictionary of dsc key value pairs>)
         '''
         return ("SM6125Pkg/SM6125.dsc", {})
@@ -212,6 +216,7 @@ class PlatformBuilder( UefiBuilder, BuildSettingsManager):
         self.env.SetValue("BLD_*_FD_BASE", self.env.GetValue("FD_BASE"), "Default")
         self.env.SetValue("BLD_*_FD_SIZE", self.env.GetValue("FD_SIZE"), "Default")
         self.env.SetValue("BLD_*_RAM_SIZE", self.env.GetValue("RAM_SIZE"), "Default")
+
         return 0
 
     def PlatformPreBuild(self):
